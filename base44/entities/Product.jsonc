@@ -1,0 +1,83 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Product name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product description"
+    },
+    "price": {
+      "type": "number",
+      "description": "Price in ZAR"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Product image URL"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "beans",
+        "ground",
+        "bundles",
+        "merch"
+      ],
+      "description": "Product category"
+    },
+    "brand": {
+      "type": "string",
+      "enum": [
+        "The Bru Is True",
+        "Osabor",
+        "Raven",
+        "Jax"
+      ],
+      "default": "The Bru Is True",
+      "description": "Brand this product belongs to"
+    },
+    "grind_options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Available grind options for coffee"
+    },
+    "roast_level": {
+      "type": "string",
+      "enum": [
+        "light",
+        "medium",
+        "dark"
+      ],
+      "description": "Roast level"
+    },
+    "weight": {
+      "type": "string",
+      "description": "Product weight (e.g., 250g, 1kg)"
+    },
+    "stock": {
+      "type": "number",
+      "default": 0,
+      "description": "Available stock"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Featured product"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Product is active"
+    }
+  },
+  "required": [
+    "name",
+    "price",
+    "category"
+  ]
+}
