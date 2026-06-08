@@ -89,8 +89,6 @@ export default function Navbar({ currentPage }) {
                 </Link>
               ))}
 
-              <div className="w-px h-4" style={{ background: "rgba(198,167,94,0.2)" }} />
-
               {portfolioLinks.map((link) => (
                 <Link
                   key={link.page}
