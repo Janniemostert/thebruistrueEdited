@@ -65,10 +65,10 @@ export default function Navbar({ currentPage }) {
         {/* Desktop — logo centered on top, links centered below */}
         <div className="hidden md:block">
           {/* Row 1: Logo */}
-          <div className="flex justify-center pt-5 pb-3">
+          <div className="flex justify-center pt-5 pb-6">
             <Link to={createPageUrl("Home")} className="flex items-center gap-3">
               <div className="w-px h-6" style={{ background: "linear-gradient(to bottom, transparent, #C6A75E, transparent)" }} />
-              <img src="/bit.png" alt="The Bru Is True Logo" className="h-10 w-auto object-contain" />
+              <img src="/bit.png" alt="The Bru Is True Logo" className="h-20 w-auto object-contain" />
               <div className="w-px h-6" style={{ background: "linear-gradient(to bottom, transparent, #C6A75E, transparent)" }} />
             </Link>
           </div>
